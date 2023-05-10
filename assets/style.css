@@ -101,11 +101,19 @@ input{
     background-color: white;
     overflow-y: auto;
 }
+.contact{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    margin-top: .5rem;
+}
+.name{
+    align-self: center;
+}
 /* COLONNA DX */
 .right-column{
     width: 65%;
     height: 100%;
-    background-color: darkslategray;
     border: 1px solid grey;
 }
 /* HEADER DX */
@@ -125,12 +133,17 @@ input{
 }
 .icon-right{
     font-size: 25px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
 }
 /* MAIN DX */
 .right-main{
     height: 80%;
     width: 100%;
     overflow-y: auto;
+    background-image: url(/img/mine.jpg);
+    background-color: wheat;
 }
 /* FOOTER DX */
 .right-footer{

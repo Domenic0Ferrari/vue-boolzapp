@@ -17,8 +17,7 @@
             <div class="left-header">
                 <div class="user">
                     <img class="avatar" :src="user.avatar" alt="#">
-                    <span>{{ user.name }}</span>
-                    
+                    <span>{{ user.name }}</span>                  
                 </div>
                 <div class="icon-header">
                     <i class="fa-solid fa-spinner" style="color: #6f7f94;"></i>
@@ -42,13 +41,14 @@
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
             <div class="left-main">
-                <div 
-                v-for="contact in contacts" 
-                class="contacts"
-                >
-                    <img src="" alt="">
-                    <span>{{ contact.name }}</span>
-                </div>
+            <div 
+            class="contact"
+            v-for="contact in contacts"
+            >
+                <img :src="contact.avatar" alt="#"> 
+                <span class="name">{{ contact.name }}</span>
+            </div>
+                
             </div>
         </div>
         <!-- COLONNA DESTRA -->

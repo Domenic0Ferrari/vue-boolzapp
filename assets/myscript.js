@@ -35,7 +35,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: './img/avatar_2.jng',
+                    avatar: './img/avatar_2.jpg',
                     visible: true,
                     messages: [
                         {
@@ -57,7 +57,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: './img/avatar_3.jng',
+                    avatar: './img/avatar_3.jpg',
                     visible: true,
                     messages: [
                         {
@@ -79,7 +79,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: './img/avatar_4.jng',
+                    avatar: './img/avatar_4.jpg',
                     visible: true,
                     messages: [
                         {
@@ -152,7 +152,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Davide',
-                    avatar: './img/avatar_8.png',
+                    avatar: './img/avatar_8.jpg',
                     visible: true,
                     messages: [
                         {
