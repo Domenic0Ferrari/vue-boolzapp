@@ -28,9 +28,46 @@ body{
     height: 100%;
     background-color: white;
 }
+.left-header{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+}
+.left-bell{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+}
+.left-search{
+    height: 7%;
+    width: 100%;
+    border: 1px solid black;
+}
+.left-main{
+    height: 73%;
+    width: 100%;
+    border: 1px solid black;
+    overflow-y: auto;
+}
 /* COLONNA DX */
 .right-column{
     width: 65%;
     height: 100%;
     background-color: darkslategray;
+}
+.right-header{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+}
+.right-main{
+    height: 80%;
+    width: 100%;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+.right-footer{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
 }
