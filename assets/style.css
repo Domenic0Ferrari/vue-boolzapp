@@ -9,4 +9,13 @@
         #009688 20%,
         #D8DBD6 20%
       );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MYSTYLE */
+.container{
+    width: 1000px;
+    height: 90vh;
+    border: 2px solid black;
 }
