@@ -81,6 +81,7 @@ i{
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    padding-inline: 1rem;
 }
 input{
     width: 90%;

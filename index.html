@@ -19,9 +19,9 @@
                     
                 </div>
                 <div class="icon-header">
-                    <i class="fa-solid fa-spinner" style="color: #c3c6d1;"></i>
-                    <i class="fa-solid fa-message" style="color: #c3c6d1;"></i>
-                    <i class="fa-solid fa-ellipsis-vertical" style="color: #c3c6d1;"></i>
+                    <i class="fa-solid fa-spinner" style="color: #6f7f94;"></i>
+                    <i class="fa-solid fa-message" style="color: #6f7f94;"></i>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #6f7f94;"></i>
                 </div>
             </div>
             <div class="left-bell">
@@ -35,12 +35,18 @@
             </div>
             <div class="left-search">
                 <div class="search-icon">
-                    <i class="fas fa-search" style="color: #c3c6d1; "></i>
+                    <i class="fas fa-search" style="color: #6f7f94; "></i>
                 </div>
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
             <div class="left-main">
-                
+                <div 
+                v-for="contact in contacts" 
+                class="contacts"
+                >
+                    <img src="" alt="">
+                    <span>{{ contact.name }}</span>
+                </div>
             </div>
         </div>
         <!-- COLONNA DESTRA -->
@@ -50,9 +56,9 @@
 
                 </div>
                 <div class="icon-right">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #c3c6d1;"></i>
-                    <i class="fa-solid fa-paperclip" style="color: #c3c6d1;"></i>
-                    <i class="fa-solid fa-ellipsis-vertical" style="color: #c3c6d1;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #6f7f94;"></i>
+                    <i class="fa-solid fa-paperclip" style="color: #6f7f94;"></i>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #6f7f94;"></i>
                 </div>
             </div>
             <div class="right-main">
@@ -65,5 +71,10 @@
             </div>
         </div>
     </div>
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- MYSCRIPT -->
+    <script src="assets/myscript.js"></script>
 </body>
 </html>
