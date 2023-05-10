@@ -1,0 +1,12 @@
+/* GENERAL STYLE */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #009688 20%,
+        #D8DBD6 20%
+      );
+}
