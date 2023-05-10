@@ -7,13 +7,13 @@ const app = Vue.createApp({
     data(){
         return{
             user: {
-                name: '',
-                avatar: ''
+                name: 'Romina',
+                avatar: './img/avatar_io.jpg'
             },
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: './img/avatar_1.png',
+                    avatar: './img/avatar_1.jpg',
                     visible: true,
                     messages: [
                         {
@@ -35,7 +35,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: './img/avatar_2.png',
+                    avatar: './img/avatar_2.jng',
                     visible: true,
                     messages: [
                         {
@@ -57,7 +57,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: './img/avatar_3.png',
+                    avatar: './img/avatar_3.jng',
                     visible: true,
                     messages: [
                         {
@@ -79,7 +79,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: './img/avatar_4.png',
+                    avatar: './img/avatar_4.jng',
                     visible: true,
                     messages: [
                         {
@@ -96,7 +96,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: './img/avatar_5.png',
+                    avatar: './img/avatar_5.jpg',
                     visible: true,
                     messages: [
                         {
@@ -113,7 +113,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Claudia',
-                    avatar: './img/avatar_5.png',
+                    avatar: './img/avatar_6.jpg',
                     visible: true,
                     messages: [
                         {
@@ -135,7 +135,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: 'Federico',
-                    avatar: './img/avatar_7.png',
+                    avatar: './img/avatar_7.jpg',
                     visible: true,
                     messages: [
                         {
