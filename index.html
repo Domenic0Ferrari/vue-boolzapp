@@ -41,14 +41,13 @@
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
             <div class="left-main">
-            <div 
-            class="contact"
-            v-for="contact in contacts"
-            >
-                <img :src="contact.avatar" alt="#"> 
-                <span class="name">{{ contact.name }}</span>
-            </div>
-                
+                <div 
+                class="contact"
+                v-for="contact in contacts"
+                >
+                    <img :src="contact.avatar" alt="#"> 
+                    <span class="name">{{ contact.name }}</span>
+                </div>               
             </div>
         </div>
         <!-- COLONNA DESTRA -->
@@ -64,7 +63,18 @@
                 </div>
             </div>
             <div class="right-main">
-
+                <div class="message sent">
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
+                    <span class="date">ciao</span>
+                </div>
+                <div class="message sent">
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
+                    <span class="date">Ciao</span>
+                </div>
+                <div class="message received">
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
+                    <span class="date">iao</span>
+                </div>
             </div>
             <div class="right-footer">
                 <i class="far fa-smile" style="color: #6f7f94;"></i>
