@@ -191,7 +191,8 @@ input{
     border-radius: 5px;
     align-self: flex-end;
     background-color: #D5F9BA;
-    padding: 0.9em;
+    padding: 1.2rem;
+    position: relative;
 }
 .received{
     width: 50%;
@@ -199,7 +200,15 @@ input{
     border-radius: 5px;
     align-self: flex-start;
     background-color: white;
-    padding: 0.9em;
+    padding: 1.2rem;
+    position: relative;
+}
+.message_date{
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
 }
 /* FOOTER DX */
 .right-footer{
