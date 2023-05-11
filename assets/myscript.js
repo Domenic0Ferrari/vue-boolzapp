@@ -177,6 +177,12 @@ const app = Vue.createApp({
             newMessage: '',
             searchStr: ''
         }
+    },
+    methods:{
+        ChangeActiveIndex(index){
+            this.activeIndex = index;
+            console.log('ciao');
+        }
     }
 });
 

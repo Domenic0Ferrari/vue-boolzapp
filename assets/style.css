@@ -107,6 +107,7 @@ input{
     height: 10%;
     margin-top: .2rem;
     border: 1px solid grey;
+    cursor: pointer;
 }
 .name{
     align-self: center;

@@ -43,7 +43,8 @@
             <div class="left-main">
                 <div 
                 class="contact"
-                v-for="contact in contacts"
+                v-for="(contact, index) in contacts"
+                @click="ChangeActiveIndex(index)"
                 >
                     <img :src="contact.avatar" alt="#"> 
                     <span class="name">{{ contact.name }}</span>
@@ -54,10 +55,12 @@
         <div class="right-column">
             <div class="right-header">
                 <div class="consumer">
-                    <img src="img/avatar_1.jpg" alt="#">
+                    <img 
+                    :src="contacts[activeIndex].avatar" alt="#"
+                    >
                     <div class="info">
                         <div class="name">
-                            Pinco Pallino Pinco pincopinco in copincin cindnd aoincd a ddgdgdg jdnifabi gafsbifb  afsbuifsba 
+                            Pinco Pallino Pinco pincopinco in copincin cindnd aoincd a ddgdgdg jdnifabi gaf sbifb  afsbuifsba 
                         </div>
                         <div class="last-access">
                             Ultimo accesso alle
