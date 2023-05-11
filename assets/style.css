@@ -54,6 +54,9 @@ i{
     object-fit: cover;
     border-radius: 30px;
 }
+.user_name{
+    font-size: 20px;
+}
 .icon-header{
     height: 80%;
     width: 30%;
@@ -158,6 +161,11 @@ input{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+}
+.last-access{
+    font-size: 13px;
+    color: gray;
 }
 .icon-right{
     font-size: 25px;
@@ -172,31 +180,26 @@ input{
     overflow-y: auto;
     background-image: url(../img/mine.jpg);
     background-color: wheat;
+}
+.main_text{
     display: flex;
     flex-direction: column;
 }
-.message{
+.sent{
     width: 50%;
     margin: .5rem .5rem;
     border-radius: 5px;
-}
-.sent{
     align-self: flex-end;
     background-color: #D5F9BA;
-}
-.received{
-    align-self: flex-start;
-    background-color: white;
-}
-.text{
     padding: 0.9em;
 }
-.message .date{
-    padding: .3em;
-    color: gray;
-    font-size: 12px;
-    display: flex;
-    justify-content: flex-end;
+.received{
+    width: 50%;
+    margin: .5rem .5rem;
+    border-radius: 5px;
+    align-self: flex-start;
+    background-color: white;
+    padding: 0.9em;
 }
 /* FOOTER DX */
 .right-footer{

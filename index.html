@@ -17,7 +17,7 @@
             <div class="left-header">
                 <div class="user">
                     <img class="avatar" :src="user.avatar" alt="#">
-                    <span>{{ user.name }}</span>                  
+                    <span class="user_name">{{ user.name }}</span>                  
                 </div>
                 <div class="icon-header">
                     <i class="fa-solid fa-spinner" style="color: #6f7f94;"></i>
@@ -77,19 +77,13 @@
                 </div>
             </div>
             <div class="right-main">
-                <div
-                class="message"
+                <div 
+                class="main_text"
+                v-for="message in contacts[activeIndex].messages"
                 >
-                    <div class="text"></div>
-                    <span class="date">ciao</span>
-                <!-- </div>
-                <div class="message sent">
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
-                    <span class="date">Ciao</span>
-                </div>
-                <div class="message received">
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
-                    <span class="date">iao</span> -->
+                    <div :class="message.status">
+                        {{ message.message }}
+                    </div>
                 </div>
             </div>
             <div class="right-footer">
