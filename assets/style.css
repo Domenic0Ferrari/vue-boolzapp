@@ -109,8 +109,21 @@ input{
     border: 1px solid grey;
     cursor: pointer;
 }
-.name{
-    align-self: center;
+.contact_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+.message_name{
+    font-size: 20px;
+}
+.message_text{
+    color: grey;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 /* COLONNA DX */
 .right-column{

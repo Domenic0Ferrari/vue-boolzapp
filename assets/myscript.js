@@ -181,7 +181,6 @@ const app = Vue.createApp({
     methods:{
         ChangeActiveIndex(index){
             this.activeIndex = index;
-            console.log('ciao');
         }
     }
 });

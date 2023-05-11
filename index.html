@@ -46,8 +46,11 @@
                 v-for="(contact, index) in contacts"
                 @click="ChangeActiveIndex(index)"
                 >
-                    <img :src="contact.avatar" alt="#"> 
-                    <span class="name">{{ contact.name }}</span>
+                    <img :src="contact.avatar" alt="#">
+                    <div class="contact_message"> 
+                        <span class="message_name">{{ contact.name }}</span>
+                        <span class="message_text">{{ contact.messages[contact.messages.length - 1].message }}</span>
+                    </div>
                 </div>               
             </div>
         </div>
@@ -60,10 +63,10 @@
                     >
                     <div class="info">
                         <div class="name">
-                            Pinco Pallino Pinco pincopinco in copincin cindnd aoincd a ddgdgdg jdnifabi gaf sbifb  afsbuifsba 
+                            {{ contacts[activeIndex].name }} 
                         </div>
                         <div class="last-access">
-                            Ultimo accesso alle
+                            Ultimo accesso alle:
                         </div>
                     </div>
                 </div>
@@ -74,17 +77,19 @@
                 </div>
             </div>
             <div class="right-main">
-                <div class="message sent">
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
+                <div
+                class="message"
+                >
+                    <div class="text"></div>
                     <span class="date">ciao</span>
-                </div>
+                <!-- </div>
                 <div class="message sent">
                     <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
                     <span class="date">Ciao</span>
                 </div>
                 <div class="message received">
                     <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolor aliquam ullam, ex reprehenderit eos! Sed quam possimus suscipit, aliquid inventore quae a adipisci modi totam debitis cumque! Est, id.</div>
-                    <span class="date">iao</span>
+                    <span class="date">iao</span> -->
                 </div>
             </div>
             <div class="right-footer">
