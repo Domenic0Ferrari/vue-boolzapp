@@ -112,6 +112,9 @@ input{
     border: 1px solid grey;
     cursor: pointer;
 }
+.contact.active{
+    background-color: rgb(180, 187, 193);
+}
 .contact_message{
     display: flex;
     flex-direction: column;
