@@ -191,13 +191,16 @@ const app = Vue.createApp({
         ChangeActiveIndex(index){
             this.activeIndex = index;
         },
-        sendMex(activeIndex){
+        sendMex(){
             this.contacts[this.activeIndex].messages.push(this.newMessage),
             this.newMessage = {
                 date: '',
                 message: '',
-                status: 'sent'
-    }
+                status: 'sent',
+            }
+            setTimeout(() => {
+                this.contacts[this.activeIndex].messages.push(this.receivedMex)
+                }, 2000)
         },
     }
 });
