@@ -206,6 +206,9 @@ const app = Vue.createApp({
                 this.contacts[this.activeIndex].messages.push(this.receivedMex)
             }, 2000)
         },
+        removeMessage(activeIndex){
+            this.contacts[this.activeIndex].messages.splice(activeIndex, 1);
+        }
     },
     computed:{
         filter(){

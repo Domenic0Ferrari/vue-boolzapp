@@ -91,6 +91,12 @@
                         <div class="message_date">
                         {{ message.date }}
                         </div>
+                        <div 
+                        class="remove"
+                        @click="removeMessage(activeIndex)"
+                        >
+                            <i class="fa-solid fa-trash" style="color: #c3c6d1;"></i>
+                        </div>
                     </div>
                     
                 </div>
