@@ -92,7 +92,13 @@
             </div>
             <div class="right-footer">
                 <i class="far fa-smile" style="color: #6f7f94;"></i>
-                <input class="write-mex" type="text" placeholder="Scrivi un messaggio">
+                <input 
+                class="write-mex" 
+                type="text" 
+                placeholder="Scrivi un messaggio"
+                @keyup.enter="sendMex(activeIndex)"
+                v-model="newMessage.message"
+                >
                 <i class="fas fa-microphone" style="color: #6f7f94;"></i>
             </div>
         </div>
