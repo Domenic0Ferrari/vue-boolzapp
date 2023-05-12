@@ -47,7 +47,7 @@
             <div class="left-main">
                 <div 
                 class="contact"
-                v-for="(contact, index) in contacts"
+                v-for="(contact, index) in filter"
                 @click="ChangeActiveIndex(index)"
                 :class="{active: index == activeIndex}"
                 >
