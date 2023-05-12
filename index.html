@@ -84,7 +84,7 @@
             <div class="right-main">
                 <div 
                 class="main_text"
-                v-for="message in contacts[activeIndex].messages"
+                v-for="(message, index) in contacts[activeIndex].messages"
                 >
                     <div :class="message.status">
                         {{ message.message }}
@@ -93,8 +93,9 @@
                         </div>
                         <div 
                         class="remove"
-                        @click="removeMessage(activeIndex)"
+                        @click="removeMessage(index)"
                         >
+                        <!-- fixare la funzione che rimuove il mex -->
                             <i class="fa-solid fa-trash" style="color: #c3c6d1;"></i>
                         </div>
                     </div>
