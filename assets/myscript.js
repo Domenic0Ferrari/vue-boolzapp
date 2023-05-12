@@ -191,7 +191,11 @@ const app = Vue.createApp({
         ChangeActiveIndex(index){
             this.activeIndex = index;
         },
+
         sendMex(){
+            let now = new Date();
+            this.newMessage.date  = now.getDate() + '/' + now.getMonth() + '/' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+            this.receivedMex.date  = now.getDate() + '/' + now.getMonth() + '/' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
             this.contacts[this.activeIndex].messages.push(this.newMessage),
             this.newMessage = {
                 date: '',
@@ -200,7 +204,7 @@ const app = Vue.createApp({
             }
             setTimeout(() => {
                 this.contacts[this.activeIndex].messages.push(this.receivedMex)
-                }, 2000)
+            }, 2000)
         },
     }
 });
