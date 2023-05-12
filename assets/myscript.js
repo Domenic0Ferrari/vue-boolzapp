@@ -206,7 +206,14 @@ const app = Vue.createApp({
                 this.contacts[this.activeIndex].messages.push(this.receivedMex)
             }, 2000)
         },
-    }
+    },
+    computed:{
+        filter(){
+            return this.contacts.filter((contacts) => {
+                return contacts.name.toLowerCase().includes(this.searchStr.toLowerCase())
+            }
+        )}
+    },
 });
 
 app.mount('.container');
