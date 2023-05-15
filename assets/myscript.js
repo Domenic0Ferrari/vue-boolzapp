@@ -189,7 +189,7 @@ const app = Vue.createApp({
     },
     methods:{
         ChangeActiveIndex(index){
-            this.activeIndex = index;
+            this.activeIndex = this.contacts.indexOf(this.filter[index]);
         },
 
         sendMex(){
