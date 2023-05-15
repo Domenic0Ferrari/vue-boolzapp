@@ -49,7 +49,7 @@
                 class="contact"
                 v-for="(contact, index) in filter"
                 @click="ChangeActiveIndex(index)"
-                :class="{active: index == activeIndex}"
+                :class="{active: contact == contacts[activeIndex]}"
                 >
                     <img :src="contact.avatar" alt="#">
                     <div class="contact_message"> 
