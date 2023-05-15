@@ -54,7 +54,7 @@
                     <img :src="contact.avatar" alt="#">
                     <div class="contact_message"> 
                         <span class="message_name">{{ contact.name }}</span>
-                        <span class="message_text">{{ contact.messages[contact.messages.length - 1].message }}</span>
+                        <span class="message_text">{{ contact.messages.length != 0 ? contact.messages[contact.messages.length - 1].message : ''}}</span>
                     </div>
                 </div>               
             </div>
