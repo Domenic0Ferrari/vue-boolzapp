@@ -202,8 +202,9 @@ const app = Vue.createApp({
                 message: '',
                 status: 'sent',
             }
+            const chatIndex = this.activeIndex;
             setTimeout(() => {
-                this.contacts[this.activeIndex].messages.push(this.receivedMex)
+                this.contacts[chatIndex].messages.push(this.receivedMex)
             }, 2000)
         },
         removeMessage(index){
